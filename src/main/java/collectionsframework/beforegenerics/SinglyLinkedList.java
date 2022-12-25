@@ -1,5 +1,6 @@
 package collectionsframework.beforegenerics;
 
+import java.util.LinkedList;
 import java.util.Objects;
 import java.util.StringJoiner;
 import java.util.function.BiPredicate;
@@ -10,6 +11,7 @@ public class SinglyLinkedList<E> {
     private int size;
 
     public boolean add(E item) {
+        
         var newNode = new Node<>(item);
         if (head == null) {
             head = newNode;
@@ -18,7 +20,7 @@ public class SinglyLinkedList<E> {
         }
 
         var x = head;
-        while (x.next != null)
+        while (x.next != null) 
             x = x.next;
 
         x.next = newNode;
@@ -33,7 +35,9 @@ public class SinglyLinkedList<E> {
     }
 
     public boolean add(int index, E item) {
+
         Objects.checkIndex(index, size);
+
         Node<E> prev = null;
         var x = head;
         var newNode = new Node<>(item);
@@ -73,10 +77,12 @@ public class SinglyLinkedList<E> {
     }
 
     public boolean remove(Object o) {
+        
         Objects.checkIndex(0, size);
         return removeObject(((o == null) ?
                 (x, obj) -> x.item == null :
                 (x, obj) -> x.item.equals(obj)), o);
+        
     }
 
 
@@ -137,6 +143,7 @@ public class SinglyLinkedList<E> {
 class SinglyLinkedListTest {
 
     public static void main(String[] args) {
+        
         var sll = new SinglyLinkedList<String>();
         sll.add("Java");
         sll.add("Scala");

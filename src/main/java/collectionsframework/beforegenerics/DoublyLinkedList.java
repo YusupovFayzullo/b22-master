@@ -3,6 +3,10 @@ package collectionsframework.beforegenerics;
 import java.util.Objects;
 import java.util.StringJoiner;
 
+
+
+
+
 public class DoublyLinkedList<E> {
 
     private Node<E> head;
@@ -33,7 +37,7 @@ public class DoublyLinkedList<E> {
         var x = getNode(index);
         if (x.prev == null) {
             head = head.next;
-        } else {
+        } else {  
             if (x.next == null) {
                 tail = tail.prev;
                 tail.next = null;
