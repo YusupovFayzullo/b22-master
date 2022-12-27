@@ -54,12 +54,7 @@ public class DoublyLinkedList<E> {
 
 
     private Node<E> getNode(int index) {
-        Node<E> temp = (size / 2 < index) ? tail : head;
-        for (int i = 0; i < ; i++) {
-
-        }
-
-        return x;
+        return null;
     }
 
 
