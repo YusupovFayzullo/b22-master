@@ -92,7 +92,8 @@ class TestHMap{
 		hMap.put(4,"to'rt");
 
 		System.out.println("hMap = " + hMap);
-		System.out.println(hMap);
+
+
 	}
 
 }
