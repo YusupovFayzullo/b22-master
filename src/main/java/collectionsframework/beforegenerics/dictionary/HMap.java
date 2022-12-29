@@ -86,12 +86,7 @@ class TestHMap{
 	public static void main(String[] args) {
 		HMap<Integer, String> hMap = new HMap<>();
 
-		hMap.put(1,"bir");
-		hMap.put(2,"ikki");
-		hMap.put(3,"uch");
-		hMap.put(4,"to'rt");
 
-		System.out.println("hMap = " + hMap);
 	}
 
 }
